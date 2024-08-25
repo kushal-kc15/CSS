@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Box model</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .Box {
+        background-color: green;
+      }
+      .Box1 {
+        color: yellow;
+        padding: 10px;
+        margin: 15px;
+        border: 2px solid blue;
+        height: 200px;
+        box-sizing: border-box;
+      }
+      .Box2 {
+        color: red;
+        padding: 10px;
+        margin: 15px;
+        border: 2px solid black;
+        height: 200px;
+        box-sizing: border-box;
+      }
+      /* note: The top and bottom margins of blocks are sometimes combined
+          (collapsed) into a single margin whose size is the largest of the
+          individual margins (or just one of them, if they are equal),
+        a behavior known as margin collapsing; */
+    </style>
+  </head>
+  <body>
+    <div class="Box Box1">I am a box</div>
+    <div class="Box Box2">I am another box</div>
+  </body>
+</html>
